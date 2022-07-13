@@ -18,6 +18,7 @@
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css">
   <script>
+    let longCarier = (new Date()).getFullYear() - 2007;
     getSeasonDay = function() {
         var dayNameStr = '';
         var theHour = (new Date()).getHours();
@@ -156,7 +157,7 @@
       <div class="offset-lg-2 col-lg-4 col-md-6">
         <div class="client-info">
           <div class="d-flex mb-50">
-            <span class="lage">12</span>
+            <span class="lage"><script>write(longCarier).toString();</script></span>
             <span class="smll">Tahun Pengalaman Pemrograman</span>
           </div>
         </div>
